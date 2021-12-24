@@ -36,6 +36,11 @@ class Solution:
                         res.append([num, nums[left], nums[right]])
                     # 如果这里用break，会漏掉解，因为结果并不唯一
                     # break
+                    while (left < right and nums[left] == nums[left + 1]):
+                        left += 1
+                    while (left < right and nums[right] == nums[right - 1]):
+                        right -= 1
+
                     left += 1
                     right -= 1
                 elif nums[left] + nums[right] < target:
