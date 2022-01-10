@@ -65,7 +65,7 @@ class Solution:
 
 
 # a = Solution().letterCombinations('2345')
-a = Solution().offical('2345')
+a = Solution().offical('234')
 print(a)
 
 
