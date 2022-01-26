@@ -32,7 +32,7 @@ class Solution:
 
     # 官方居然直接用了排序
     def offical_sort(self, num1, m, num2, n):
-        num1[:] = num2
+        num1[m:] = num2
         num1.sort()
 
 
