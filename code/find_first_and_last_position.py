@@ -53,7 +53,7 @@ class Solution:
             return res
         else:
             return [-1, -1]
-        
+
 
 a = Solution().searchRange(nums = [4, 5, 6, 6, 6, 6, 6, 6, 8], target = 5)
 print(a)
