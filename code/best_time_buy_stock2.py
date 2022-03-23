@@ -89,7 +89,7 @@ class Solution:
         return dp0
 
 
-    
+
     # 题解区看到一个和我的思路一样的?，依旧代码比我的简洁
     def others(self, prices):
         buy = sell = prices[0]
