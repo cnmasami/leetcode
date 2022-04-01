@@ -59,5 +59,5 @@ class Solution:
 
 
 
-a = Solution().maxProfit([1, 3], fee = 2)
+a = Solution().maxProfit([3,3,5,0,0,3,1,4], fee = 0)
 print(a)
