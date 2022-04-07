@@ -129,6 +129,8 @@ class Solution:
         # return sell2
 
         # 按照我自己的理解又改造了一下代码，可以理解了，但是唯一不理解的就是初始化buy2也是princes[0]
+        # 但是差不多又可以理解了，因为buy2后来是和sell1 - prices[i]比较的，
+        # 应该不管怎样，都是sell1 - prices[i]更大一点，
         buy1 = buy2 = -prices[0]
         sell1 = sell2 = 0
 
