@@ -29,19 +29,6 @@ class Solution:
             la -= 1
             lb -= 1
 
-            # if sum_num == 3:
-            #     holder = 1
-            #     res = '1' + res
-            # elif sum_num == 2:
-            #     holder = 1
-            #     res = '0' + res
-            # elif sum_num == 1:
-            #     holder = 0
-            #     res = '1' + res
-            # else:
-            #     holder = 0
-            #     res = '0' + res
-
         if holder:
             res = '1' + res
 
@@ -73,4 +60,4 @@ class Solution:
 # print('{0:b}'.format(int('1010', 2) + int('1011', 2)))
 
 # print(int('10', 2))
-print(bin())
+# print(bin())
