@@ -58,7 +58,7 @@ class Solution:
                     q.append(node.right)
 
             ans.append(level)
-            
+
         return ans[::-1]
 
 
