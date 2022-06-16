@@ -45,3 +45,5 @@ class Solution:
             for child in reversed(node.children):
                 stack.append(child)
 
+        return ans
+
