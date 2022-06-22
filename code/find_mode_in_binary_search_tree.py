@@ -50,7 +50,6 @@ class Solution:
             elif cru_count == max_count:
                 final.append(root.val)
 
-
             prev = root.val
 
             dfs(root.right)
