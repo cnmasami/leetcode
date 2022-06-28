@@ -20,7 +20,7 @@ class Solution:
 
         if len(nums) == 1:
             return TreeNode(nums[0])
-        elif len(nums) <= 2:
+        elif len(nums) == 2:
             return TreeNode(nums[1], TreeNode(nums[0]))
         else:
             root = len(nums) // 2
