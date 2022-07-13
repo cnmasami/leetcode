@@ -29,7 +29,6 @@ class Solution:
                 return
 
             cur_str += chr(root.val + 97)
-            print(cur_str)
 
             if not root.left and not root.right:
                 if smallest:
