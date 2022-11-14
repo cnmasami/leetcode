@@ -53,5 +53,8 @@ class Solution:
         big = 2 ** 30
         return n > 0 and big % 2 == 0
 
+    def other(self, n: int) -> bool:
+        return n > 0 and bin(n).count('1') == 1
+
 
 
