@@ -51,7 +51,7 @@ class Solution:
     # 在题目给定的32位有符号整数的范围内，最大的2的幂为2的30次方，只需要判断n是否为2的30次方的约数即可
     def math_two(self, n: int) -> bool:
         big = 2 ** 30
-        return n > 0 and big % 2 == 0
+        return n > 0 and big % n == 0
 
     def other(self, n: int) -> bool:
         return n > 0 and bin(n).count('1') == 1
