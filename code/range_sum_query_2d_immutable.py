@@ -34,6 +34,7 @@ class NumMatrix:
 class D2NumMatrix:
 
     def __init__(self, matrix: List[List[int]]):
+        # 引用数据类型，所以不行
         # self.matrix = [[0] * (len(matrix[0]) + 1)] * (len(matrix) + 1)
         r = len(matrix)
         c = len(matrix[0])
