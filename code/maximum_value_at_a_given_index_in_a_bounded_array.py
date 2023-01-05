@@ -84,7 +84,7 @@ class Soultion_bin():
 
         while left < right:
             mid = (left + right + 1) >> 1
-            if sum(mid -1, index) + sum(mid, n - index) <= maxSum:
+            if sum(mid - 1, index) + sum(mid, n - index) <= maxSum:
                 left = mid
             else:
                 right = mid -1
