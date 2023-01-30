@@ -10,7 +10,5 @@ class Solution:
             x += 2
 
         return c == 0
-
-
 a = Solution().judgeSquareSum(5)
 print(a)

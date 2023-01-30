@@ -70,6 +70,7 @@ class Solution:
                 random_select(i + 1, right, k - (i - left + 1))
 
         n = len(points)
+
         random_select(0, n -1, k)
         return points[:k]
 
