@@ -12,6 +12,7 @@ from typing import List
 
 class Solution:
     # 双指针 循环不变量
+    # 双指针，一个指针指0，一个指针指2
     def sortColors(self, nums: List[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.
@@ -81,8 +82,35 @@ class Solution:
                 nums[p0] = 0
                 p0 += 1
 
+    # 双指针，p0来交换0，p1来交换1. 指针初始值都为0
+    # 如果找到了1，将其与nums[p1]交换，并将p1向后移动一个位置
+    # 找到了0，因为连续的0之后是连续的1，
+    # 因此如果我们将0与nums[p0]交换，那么我们可能也会把1交换出去。
+    # 当p0<p1时，我们已经将一些1连续地放在头部，此时一定会把一个1交换出去，导致答案错误
+    # 因此，如果 p0<p1，那么我们需要再将 nums[i] 与 nums[p1] 进行交换，
+    # 其中 i 是当前遍历到的位置，在进行了第一次交换后，
+    # nums[i] 的值为 1，我们需要将这个 1 放到「头部」的末端。
+    # 在最后，无论是否有p0<p1，我们需要将p0和p1均向后移动一个位置，
+    # 而不是仅将p0 向后移动一个位置。
+    def sortColors4(self, nums: List[int]) -> None:
+        n = len(nums)
+        p0 = p1 = 0
+        for i in range(n):
+            if nums[i] == 1:
+                nums[i], nums[p1] = nums[p1], nums[i]
+                p1 += 1
+            elif nums[i] == 0:
+                nums[i], nums[p0] = nums[p0], nums[i]
+                if p0 < p1:
+                    nums[i], nums[p1] = nums[p1], nums[i]
+                p0 += 1
+                p1 += 1
 
-a = Solution().sortColors3([2,0,2,1,1,0])
-print(a)
+
+
+
+nums = [1,2,0,2,1,0]
+Solution().sortColors(nums)
+print(nums)
 
 
