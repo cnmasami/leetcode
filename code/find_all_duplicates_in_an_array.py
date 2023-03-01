@@ -18,6 +18,6 @@ class Solution:
         return ans
 
 
-a = Solution().findDuplicates2([4,3,2,7,8,2,3,1])
+a = Solution().findDuplicates([4,3,2,7,8,2,3,1])
 print(a)
 
