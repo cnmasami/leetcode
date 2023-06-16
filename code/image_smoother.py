@@ -51,8 +51,6 @@ class Solution:
             ans[i][j] = tot // cnt
 
         return ans
-    
-
 
 
 a = Solution().imageSmoother([[100,200,100],[200,50,200],[100,200,100]])
